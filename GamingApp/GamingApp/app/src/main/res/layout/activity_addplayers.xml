@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".Addplayers">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:text="Enter Player Name"
+        android:textStyle="bold"
+
+        />
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/darkblue"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="22dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ximge">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/playerone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:hint="Player One"
+            android:textColorHint="@color/lightwhite"
+            android:background="@color/darkblue"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/darkblue"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="22dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ximge">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/playertwo"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="20dp"
+            android:hint="Player Two"
+            android:textColorHint="@color/lightwhite"
+            android:background="@color/darkblue"
+            />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Start Game"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rectangle"
+       >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>

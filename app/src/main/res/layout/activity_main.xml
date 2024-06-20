@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+
+        android:id="@+id/texttitle"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="19dp"
+        android:fontFamily="casual"
+
+        android:text="Tic Tac Toe"
+        android:textColor="#6A79F7"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+
+        android:id="@+id/relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texttitle"
+        android:layout_marginBottom="20dp">
+
+
+        <TextView
+
+            android:id="@+id/text_player1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Player-1 Score"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/text_player2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/text_player1"
+            android:text="Player-2 Score"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/score_Player1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/text_player1"/>
+
+
+
+        <TextView
+
+            android:id="@+id/score_Player2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/text_player2"
+            android:layout_toRightOf="@id/score_Player1"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+
+        android:id="@+id/layout_linear"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/relative_layout"
+
+        >
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+
+                android:id="@+id/btn0"
+                android:backgroundTint="#0000FF"
+                android:layout_width="85dp"
+
+                android:layout_height="85dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:textSize="26dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+
+                android:id="@+id/btn1"
+
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+
+                android:layout_marginHorizontal="5dp"
+
+                android:layout_marginBottom="1.25dp"
+
+                android:backgroundTint="#0000FF"
+                android:textSize="26dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+
+                android:id="@+id/btn2"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:backgroundTint="#0000FF"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:textSize="26dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:textSize="26dp"
+                android:backgroundTint="#0000FF"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:textSize="26dp"
+                android:backgroundTint="#0000FF"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:backgroundTint="#0000FF"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:textSize="26dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:backgroundTint="#0000FF"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:textSize="26dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+
+                android:id="@+id/btn7"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:backgroundTint="#0000FF"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:textSize="26dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+
+                android:id="@+id/btn8"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:backgroundTint="#0000FF"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="1.25dp"
+                android:textSize="26dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/textStatus"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_linear"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="75dp"
+        android:text="Status"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+
+    <Button
+
+        android:id="@+id/btn_play_again"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/textStatus"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#19BDFF"
+        android:text="PLAY AGAIN"
+        android:textSize="26dp" />
+
+    <Button
+
+        android:id="@+id/btn_reset"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/btn_play_again"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#19BDFF"
+        android:text="RESET"
+        android:textSize="26dp" />
+
+    <Button
+        android:id="@+id/btn_high_scores"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="#6A79F7"
+        android:layout_marginEnd="39dp"
+        android:layout_toStartOf="@+id/texttitle"
+        android:onClick="showHighScores"
+        android:text="High Scores" />
+
+
+</RelativeLayout>
